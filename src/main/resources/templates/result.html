@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+书吧5－<span th:text="${income.getDayOfMonth()}"></span>：<br>
+共收入<span th:text="${totalValue}"></span>元，<br>
+1. 早上<span th:text="${income.breakfast_num}"></span>人消费，收入<span th:text="${income.breakfast_income}"></span>元，
+<span th:text="${diffBreakfast}"></span>，<br>
+2. 中午<span th:text="${income.lunch_num}"></span>人消费，收入<span th:text="${income.lunch_income}"></span>元，
+<span th:text="${diffLunch}"></span>，<br>
+3. 晚上<span th:text="${income.dinner_num}"></span>人消费，收入<span th:text="${income.dinner_income}"></span>元，
+<span th:text="${diffDinner}"></span>。<br>
+</body>
+</html>

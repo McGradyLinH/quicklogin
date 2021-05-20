@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.188.81:3306/census?serverTimezone=PRC&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+    type: com.zaxxer.hikari.HikariDataSource
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.example.quicklogin.domain
+
+
+
+logging:
+  level:
+    com.example.quicklogin.mapper: debug
